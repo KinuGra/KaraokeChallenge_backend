@@ -1,15 +1,24 @@
 {
-  "name": "20250816_karaokechallenge_backend",
+  "name": "karaoke-api",
   "version": "1.0.0",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "migrate": "prisma migrate dev",
+    "seed": "prisma db seed",
+    "studio": "prisma studio"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@prisma/client": "^6.14.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0"

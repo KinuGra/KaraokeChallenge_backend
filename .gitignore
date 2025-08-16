@@ -25,3 +25,14 @@ Thumbs.db
 coverage/
 .nyc_output/
 .cache/
+
+/generated/prisma
+
+# SQLite
+*.db
+*.db-journal
+*.sqlite
+*.sqlite-journal
+
+# Prisma
+prisma/dev.db
