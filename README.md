@@ -9,6 +9,8 @@ npx prisma db seed（最初の1回だけでよい）
 
 // Prisma Studioで中身を見る（port 5555を使用している場合）
 npx prisma studio --port 5556
+
+npm run dev
 ```
 
 .env
